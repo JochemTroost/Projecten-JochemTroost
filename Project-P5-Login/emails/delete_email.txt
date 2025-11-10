@@ -1,0 +1,32 @@
+Van: NoReply@JTS.com
+
+Aan: 9025293@student.zadkine.nl
+Onderwerp: Bevestig accountverwijdering
+
+Beste gebruiker,
+
+Je hebt verzocht om je account te verwijderen.
+Klik op deze link om dit te bevestigen:
+http://localhost/dashboard/crud_users/confirm-delete.php?email=9025293%40student.zadkine.nl&token=33ee4907ffa260eac19c0960161e2b0af405e2239d7c58473761fcdc54b72cf2
+
+Na bevestiging wordt je account na 30 dagen definitief verwijderd.
+Als je dit niet hebt aangevraagd, kun je deze e-mail negeren.
+
+Met vriendelijke groet, Team JTS
+
+Van: NoReply@JTS.com
+
+Aan: 9025293@student.zadkine.nl
+Onderwerp: Bevestig accountverwijdering
+
+Beste gebruiker,
+
+Je hebt verzocht om je account te verwijderen.
+Klik op deze link om dit te bevestigen:
+http://localhost/dashboard/crud_users/confirm-delete.php?email=9025293%40student.zadkine.nl&token=9d8dc17cf65b282b3ec75ee34a275b38334fc298be2394dfd443ac675ef4d9aa
+
+Na bevestiging wordt je account na 30 dagen definitief verwijderd.
+Als je dit niet hebt aangevraagd, kun je deze e-mail negeren.
+
+Met vriendelijke groet, Team JTS
+

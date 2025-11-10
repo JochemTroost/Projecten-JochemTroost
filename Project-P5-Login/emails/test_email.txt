@@ -1,0 +1,36 @@
+Van: NoReply@JTS.com
+
+Aan: 9025293@student.zadkine.nl
+Onderwerp: Wachtwoord reset aanvraag
+
+Beste Jochem Troost,
+
+Via onze website heeft een wachtwoordt wijziging aangevraagt.
+
+Klik op deze link om je wachtwoord te wijzigen:
+http://localhost/dashboard/crud_users/reset-password.php?email=9025293%40student.zadkine.nl&token=f702d9ec6d99e52f34c40038733fc215278fd51b69b45abe0406ba0fc75c5425
+
+Deze link is 1 uur geldig.
+
+Mocht u niet van deze aanvraag op de hoogte zijn, dan kunt u deze mail negeren.
+
+Met vriendelijke groet, Team JTS
+
+Van: NoReply@JTS.com
+
+Aan: 9025293@student.zadkine.nl
+Onderwerp: Wachtwoord reset aanvraag
+
+Beste Jochem Troost,
+
+Via onze website heeft een wachtwoordt wijziging aangevraagt.
+
+Klik op deze link om je wachtwoord te wijzigen:
+http://localhost/dashboard/crud_users/reset-password.php?email=9025293%40student.zadkine.nl&token=a8060eee90a669525ee2221773aced2b404796332f208c9b1a5713520841a87f
+
+Deze link is 1 uur geldig.
+
+Mocht u niet van deze aanvraag op de hoogte zijn, dan kunt u deze mail negeren.
+
+Met vriendelijke groet, Team JTS
+

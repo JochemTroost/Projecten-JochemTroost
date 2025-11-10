@@ -1,0 +1,88 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(62, 170, 208, 255);
+}
+h1 {
+  position: relative;
+  top: 15%;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  height: 10%;
+  background-color: rgba(23, 129, 179, 255);
+  color: aliceblue;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  border: 1.5px solid #504b4b;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gameBox {
+  left: 25%;
+  top: 20%;
+  position: absolute;
+  width: 50%;
+  height: 40%;
+  background-color: rgba(23, 129, 179, 255);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border: 1.5px solid #504b4b;
+  border-radius: 5px;
+}
+
+#start-btn {
+  position: absolute;
+  left: 45%;
+  bottom: 10%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #484444;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  font-family: "Merriweather", serif;
+}
+
+#start-btn:hover {
+  background-color: #656060;
+}
+
+.reactionTime {
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  color: aliceblue;
+  font-family: "Merriweather", serif;
+}
+
+.div9 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(23, 129, 179, 255);
+}
+
+.output {
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  font-size: xx-large;
+  color: aliceblue;
+  font-family: "Merriweather", serif;
+}

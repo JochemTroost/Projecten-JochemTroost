@@ -1,0 +1,119 @@
+/* Algemene styling */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #9cd1e3;
+    font-family: Arial, sans-serif;
+}
+
+
+.game {
+    width: 1000px;
+    height: 400px;
+    background-color: #c0e8d5;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #333;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.dinosaur {
+    width: 100px;
+    height: 100px;
+    background: url('dino.png') no-repeat center/contain;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+
+
+.obstacle {
+    width: 80px;
+    height: 100px;
+    background: url('cactus.png') no-repeat center/contain;
+    position: absolute;
+    bottom: 0;
+    left: 500px;
+    
+    animation: moveLeft 2s linear infinite;
+}
+
+
+.score {
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    display: none;
+}
+
+#start-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#start-btn:hover {
+    background-color: #555;
+}
+
+.start-btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.start-btn:hover {
+    background-color: #555;
+}
+@keyframes moveLeft {
+    0% {
+        left: 1000px;
+    }
+    100% {
+        left: -40px;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 200px;
+    }
+    100% {
+        bottom: 0;
+    }
+}

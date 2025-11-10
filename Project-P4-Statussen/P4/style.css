@@ -1,0 +1,344 @@
+/* Algemene instellingen voor de website */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.btnOrder {
+  padding: 9px 14px;
+  background-color: #078a01;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btnOrder:hover {
+  background-color: #067401;
+}
+.rollen-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.rollen-container ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+
+.btnOrderNotactif {
+  padding: 9px 14px;
+  background-color: #a90000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btnOrderNotactif:hover {
+  background-color: #810000;
+}
+
+a {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  color: #545454;
+  text-decoration: none;
+}
+
+/* Algemene container voor alle pagina's */
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Navbar-styling */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.no_access {
+  color: rgb(156, 156, 156);
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  cursor: not-allowed;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Stijlen voor de registratie- en inlogpagina */
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Titels van formulieren */
+h1 {
+  color: #333;
+}
+
+/* Labels van de formuliervelden */
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+.btn {
+  padding: 7px 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #2a2a2a;
+}
+
+.btnOrder {
+  padding: 7px 12px;
+  background-color: #078a01;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btnOrder:hover {
+  background-color: #067401;
+}
+/* Invoervelden */
+input,
+select,
+textarea {
+  width: 30%;
+  padding: 8px;
+  text-align: center;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+.status-actief {
+  color: green;
+  font-weight: bold;
+}
+.status-inactief {
+  color: orange;
+  font-weight: bold;
+}
+.status-geblokkeerd {
+  color: red;
+  font-weight: bold;
+}
+.age {
+  width: 20%;
+  padding: 8px;
+  margin: 5px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Stijlen voor de submit knop */
+.submitForm {
+  width: 20%;
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+img {
+  width: 10%;
+}
+.submitForm:hover {
+  background-color: #218838;
+}
+
+.status-message {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px auto; /* Zorgt ervoor dat de melding bovenaan en gecentreerd staat */
+  width: 50%;
+  max-width: 500px; /* Limiteer de breedte */
+  position: fixed; /* Gebruik fixed positionering voor het vastzetten aan de bovenkant */
+  top: 50px; /* Zet de melding aan de bovenkant */
+  left: 50%; /* Horizontale positionering in het midden van het scherm */
+  transform: translateX(-50%); /* Perfect centreren horizontaal */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Toevoegen van schaduw voor extra diepte */
+  opacity: 0; /* Begint onzichtbaar */
+  transition: opacity 0.5s ease-in-out; /* Voeg een zachte overgang toe voor het verdwijnen */
+  z-index: 1000; /* Zorg ervoor dat de melding altijd boven andere content komt */
+}
+
+.status-message.show {
+  opacity: 1; /* Zorg ervoor dat het zichtbaar is als we de show klasse toevoegen */
+}
+
+/* Succes en foutmeldingen */
+.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Styling voor de homepage */
+.homepage-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.homepage-container h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.homepage-container p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Styling voor de knoppen in de navigatie */
+.navbar div a {
+  font-size: 1rem;
+  padding: 12px 16px;
+}
+
+/* Responsieve ontwerp aanpassingen */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    padding: 10px;
+  }
+
+  .form-container {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .homepage-container h1 {
+    font-size: 1.5rem;
+  }
+}
+table {
+  width: 70%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.hero {
+  background-image: url("images/bakkerij.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #333;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.about,
+.products,
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.products .product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product {
+  background: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.contact p {
+  font-size: 1.2rem;
+}
