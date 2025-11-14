@@ -1,0 +1,117 @@
+/* app/assets/css/attractions.css */
+
+/* === Thema-variabelen (veilig met defaults) === */
+:root{
+  --font: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+  --bg: #fff;
+  --text: #222;
+
+  --surface: #fff8f0;
+  --surface-2: #fffdf8;
+
+  --border: #e2c6a3;
+  --border-2: #eed8be;
+
+  --heading: #4a2f0e;
+  --muted: #6a6a6a;
+
+  --accent: #f4a261;
+  --accent-2: #e76f51;
+
+  --shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+/* === Pagina basis === */
+.page,
+body.attractions-page{
+  font-family: var(--font);
+  margin: 2rem;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Titel */
+h1{
+  font-size: 2rem;
+  margin: 0 0 1rem;
+  color: var(--heading);
+  font-weight: 800;
+}
+
+/* Flash-meldingen (consistent met andere pagina's) */
+.message{ padding:.6rem .8rem; border-radius:.5rem; margin:.75rem 0; font-weight:600; }
+.message.success{ background:#dff5e6; color:#135f2d; border:1px solid #bfe8ca; }
+.message.error{ background:#fde3e3; color:#892020; border:1px solid #f0c3c3; }
+
+/* Toolbar (boven lijst) */
+.toolbar{
+  display:flex; gap:.6rem; align-items:center; justify-content:space-between;
+  margin: 1rem 0;
+}
+
+/* Knoppen */
+.btn{
+  display:inline-block; padding:.5rem .9rem; border:1px solid var(--border);
+  border-radius:.5rem; text-decoration:none; background:#fff; color:#222;
+  transition: transform .1s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease;
+}
+.btn:hover{ transform: translateY(-1px); box-shadow: var(--shadow); text-decoration:none; }
+.btn-primary{ background: var(--accent); border-color: var(--accent); color:#fff; }
+.btn-primary:hover{ background: var(--accent-2); border-color: var(--accent-2); }
+.btn-danger{ background:#b00020; border-color:#b00020; color:#fff; }
+.btn-secondary{ background:#f6f6f6; }
+
+/* === Tabel (overzicht) === */
+.table{
+  width:100%; border-collapse: collapse; background:#fff; border:1px solid var(--border);
+  border-radius:12px; overflow:hidden; box-shadow: var(--shadow);
+}
+.table th, .table td{ padding:.7rem .8rem; border-bottom:1px solid var(--border-2); text-align:left; }
+.table th{
+  background:#f4d9b2; color: var(--heading); text-transform:none; letter-spacing:.1px;
+}
+.table tr:nth-child(even){ background: var(--surface-2); }
+.table tr:hover{ background:#faf3ea; }
+
+/* Acties in tabel */
+.actions{ display:flex; flex-wrap:wrap; gap:.5rem; }
+
+/* Status pillen */
+.status{
+  display:inline-block; padding:.2rem .55rem; border-radius:999px; font-size:.85rem; font-weight:700;
+  border:1px solid transparent;
+}
+.status--open{ background:#eaf8ee; color:#0a6a3a; border-color:#c1e9cf; }
+.status--closed{ background:#ffe9ea; color:#a5222a; border-color:#f2c2c5; }
+.status--maintenance{ background:#fff6d8; color:#7a5c05; border-color:#f1e0a6; }
+
+/* Wachtijd badge */
+.wait-pill{
+  display:inline-block; padding:.2rem .5rem; border-radius:.45rem;
+  background:#eef2ff; color:#1e2a78; border:1px solid #dfe5ff; font-weight:700;
+}
+
+/* === Formulier === */
+.form{ max-width: 960px; }
+.form .group{
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px;
+}
+label{ display:block; margin:.4rem 0 .2rem; font-weight:700; color: var(--heading); }
+input[type="text"], input[type="number"], select{
+  padding:.5rem .6rem; border:1px solid var(--border); border-radius:.5rem; width:100%;
+  background:#fff;
+}
+.err{ color:#a00; font-weight:600; }
+
+/* Kaart/box voor form-secties */
+.box{
+  background: var(--surface); border:1px solid var(--border); border-radius:12px;
+  padding: 14px; margin: 12px 0; box-shadow: var(--shadow);
+}
+.box legend{ font-weight:800; color: var(--heading); }
+
+/* Responsief */
+@media (max-width:720px){
+  .page, body.attractions-page{ margin:1rem; }
+  .toolbar{ flex-direction:column; align-items:flex-start; gap:.5rem; }
+}

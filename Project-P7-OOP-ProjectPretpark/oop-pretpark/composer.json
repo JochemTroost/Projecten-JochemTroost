@@ -1,0 +1,25 @@
+{
+    "name": "joche/oop-pretpark",
+    "description": "Project Pretpark - Attractiebeheer (A001) + Project Pretpark - Winkels & Omzet (D001)",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "JochemTroost",
+            "email": "9025293@student.zadkine.nl"
+        },
+        {
+            "name": "PascalVuong",
+            "email": "9008819@student.zadkine.nl"
+        }
+    ],
+    "require": {
+        "smarty/smarty": "5"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1"
+    }
+}

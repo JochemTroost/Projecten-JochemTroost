@@ -1,0 +1,284 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:rgb(227, 227, 227);
+  color: #333;
+  text-align: center;
+  overflow-x: hidden;
+
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.status-message {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+/* Koppen */
+h1 {
+  color: #007bff;
+}
+
+/* Tabel styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Knoppen */
+a {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.btn-edit {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #218838;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* Formulier styling */
+form {
+  background: rgb(232, 232, 232);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: auto;
+  font-size: x-large;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  font-size: large;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: large;
+  width: 90%;
+}
+
+input[type="number"] {
+  width: 30%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  font-size: large;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.btn-add {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn-add:hover {
+    background-color: #218838;
+}
+.btn-back {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    background-color: #c82333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn-back:hover {
+    background-color: #911421;
+}
+.container-master {
+
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  background-color: #c82333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 25%;
+}
+
+.back-button:hover {
+  background-color: #911421;
+}
+
+
+.message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+h2 {
+  color: #333;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 90%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.body-master {
+  font-family: Arial, sans-serif;
+  background-color: rgb(227, 227, 227);
+  text-align: center;
+  padding: 50px;
+}
+.body-rooms {
+  font-family: Arial, sans-serif;
+  background-color:rgb(198, 197, 197);
+  text-align: center;
+  padding: 50px;
+}
+.container-rooms {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
+}
+
+.room-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center; 
+}
+
+.room-list button {
+  width: 90%; 
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+}
+
+.room-list button:hover {
+  background-color: #0056b3;
+}
+
+
+.back-button:hover {
+  background-color: #a71d2a;
+}
+
+.footer {
+  position: absolute;
+  color: black;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background: rgba(191, 190, 190, 0.5);
+  font-size: 14px;
+  margin-top: auto;
+}

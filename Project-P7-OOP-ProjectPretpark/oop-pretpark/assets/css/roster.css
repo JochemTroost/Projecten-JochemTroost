@@ -1,0 +1,78 @@
+/* === Roster (overzicht) === */
+
+body.roster-page {}
+
+/* Filters / formulier bovenaan */
+.roster-filters{
+  margin: .25rem 0 1rem;
+}
+
+/* Grid met velden + knop */
+.roster-filters .grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+
+/* Acties (knop) rechts */
+.roster-filters .actions{
+  display: flex;
+  margin-bottom: 14px;
+  align-items: center;
+  align-self: end;
+  gap: 10px;
+}
+
+/* Consistente hoogte voor inputs/selects */
+.roster-filters select,
+.roster-filters input[type="date"],
+.roster-filters input[type="text"],
+.roster-filters input[type="number"]{
+  height: 44px;
+}
+
+/* Knop even hoog als inputs */
+.roster-filters .btn{
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;                /* horizontale ademruimte */
+}
+
+/* Tabel container met horizontale scroll op mobiel */
+.table-wrap{
+  width:100%;
+  overflow-x:auto;
+}
+
+/* Roostertabel */
+.table.shift-table thead th{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.table.shift-table td.time{
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.table.shift-table tr.is-today{
+  background: #fff8d9;
+}
+
+/* Locatie “pill” */
+.pill{
+  display:inline-block;
+  padding:.25rem .5rem;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid var(--border);
+  color: var(--heading);
+  font-weight:700;
+}
+
+/* Responsiveness */
+@media (max-width: 720px){
+  .roster-filters .actions{ justify-content:flex-start; }
+}

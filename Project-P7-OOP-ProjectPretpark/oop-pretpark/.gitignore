@@ -1,0 +1,5 @@
+/vendor/
+/var/smarty/compile/
+/var/smarty/cache/
+/.idea/
+.env

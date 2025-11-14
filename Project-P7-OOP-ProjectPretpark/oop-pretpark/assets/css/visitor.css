@@ -1,0 +1,260 @@
+/* visitor.css */
+
+/* === Algemene body styling voor visitor pagina === */
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to bottom, #fdf6e3, #f0e6d2);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Titel */
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5em;
+    color: #4a2f0e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Messages */
+.message {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* === Form styling === */
+/*form {*/
+/*    max-width: 700px;*/
+/*    margin: 0 auto 30px auto;*/
+/*    background-color: #fff8f0;*/
+/*    padding: 25px;*/
+/*    border-radius: 12px;*/
+/*    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);*/
+/*}*/
+.search-form {
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 250px;
+    margin-right: 8px;
+}
+
+.clear-search {
+    margin-left: 10px;
+    color: #555;
+    text-decoration: none;
+}
+
+.clear-search:hover {
+    text-decoration: underline;
+}
+
+.shop-block {
+    border: 2px solid #e2c6a3;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: #fff2e0;
+}
+
+.shop-block legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #a45c1b;
+    padding: 0 10px;
+}
+
+/* Labels & inputs */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #e76f51;
+}
+
+/* === Bezoekersoverzicht tabel === */
+.shop-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #fff8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.shop-list-table th,
+.shop-list-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #e2c6a3;
+}
+
+.shop-list-table th {
+    background-color: #f4d9b2;
+    color: #5a2e0f;
+    font-weight: bold;
+}
+
+.shop-list-table tr:nth-child(even) {
+    background-color: #fff2e0;
+}
+
+.shop-list-table tr:hover {
+    background-color: #f9e3cb;
+}
+
+.shop-list-table td a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+.shop-list-table td a:hover {
+    text-decoration: underline;
+}
+
+/* === Monthly stats (visitors) ===
+   Gebruik je samen met base.css. Fallback-kleuren zijn toegevoegd
+   voor het geval de CSS-variabelen niet geladen zijn. */
+
+body.stats-page {}
+
+.stats-filters .grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  align-items: end; /* alles mooi op één lijn onderaan */
+}
+.stats-filters .actions{
+  display: flex;
+  align-items: center;
+  align-self: end;
+}
+/* Zorg dat selectors en knoppen even hoog zijn, ook zonder .btn class */
+.stats-filters select,
+.stats-filters button,
+.stats-filters .btn{
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* KPI-tiles boven de tabel */
+.kpis{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin: 12px 0 18px;
+}
+.kpi{
+  background: var(--surface, #fff8f0);
+  border: 1px solid var(--border, #e2c6a3);
+  border-radius: 12px;
+  box-shadow: var(--shadow, 0 6px 15px rgba(0,0,0,.10));
+  padding: 14px;
+}
+.kpi .label{
+  color: var(--muted, #7a4f2b);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.kpi .value{
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--heading, #4a2f0e);
+}
+.kpi .value.money{
+  font-variant-numeric: tabular-nums;
+}
+
+/* Tabel (responsive + sticky header) */
+.table-wrap{ width:100%; overflow-x:auto; }
+
+/* Als je base.css .table gebruikt: */
+.stats-table thead th{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Vangnet wanneer je (nog) geen .table class gebruikt op monthlyStats:
+   deze stijlen gelden dan alleen op de stats-page */
+.stats-page table{
+  width:100%;
+  border-collapse: collapse;
+  background: var(--surface, #fff8f0);
+  border: 1px solid var(--border, #e2c6a3);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow, 0 6px 15px rgba(0,0,0,.10));
+}
+.stats-page thead th, 
+.stats-page tbody td{
+  padding: .65rem .75rem;
+  border-bottom: 1px solid var(--border, #e2c6a3);
+  text-align: left;
+}
+.stats-page thead th{
+  background: #f4d9b2;
+  color: var(--heading, #4a2f0e);
+  font-weight: 700;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.stats-page tbody tr:nth-child(even){ background:#fff2e0; }
+.stats-page tbody tr:hover{ background:#f9e3cb; }
